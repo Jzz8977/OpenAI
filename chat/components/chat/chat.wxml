@@ -1,0 +1,28 @@
+<scroll-view scroll-y="true" style="height: 1190rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view 
+wx:for="{{list}}"
+wx:key="index"
+>
+  <view class="talkWrapMe" wx:if="{{item.type==='question'}}">
+    <t-avatar class="avatar-example" image="{{customerImg}}" />
+    <view class="talkBubble">
+      {{item.word}}
+    </view>
+  </view>
+  <view class="talkWrapAn" wx:if="{{item.type==='answer'}}">
+    <t-avatar class="avatar-example" image="{{GPT}}" />
+    <view class="talkBubble" wx:if="{{!item.answerType}}">
+      {{item.word}}
+    </view>
+    <view class="talkBubble" wx:else>
+     <img src="{{item.word}}" alt=""/>
+    </view>
+  </view>
+</view>
+
+</scroll-view>
+<view class="home-page-footer">
+  <t-input placeholder="请输入你的问题"   value="{{inputValue}}" bindchange="bindKeyInput" data-name="inputValue" >
+    <t-button slot="suffix" theme="primary" size="large"  bindtap='askQuestion'> 发送 </t-button>
+  </t-input>
+</view>

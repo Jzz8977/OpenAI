@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home/home"
+    
+  ],
+  "subpackages": [
+    {
+      "root": "pages/side-bar/",
+      "pages": ["side-bar", "base/index", "switch/index", "custom/index", "with-icon/index"]
+    },
+    {
+      "root": "pages/action-sheet/",
+      "pages": ["action-sheet"]
+    },
+    {
+      "root": "pages/avatar/",
+      "pages": ["avatar"]
+    },
+    {
+      "root": "pages/calendar/",
+      "pages": ["calendar"]
+    },
+    {
+      "root": "pages/dialog/",
+      "pages": ["dialog"]
+    },
+    {
+      "root": "pages/picker/",
+      "pages": ["picker"]
+    },
+    {
+      "root": "pages/rate/",
+      "pages": ["rate"]
+    },
+    {
+      "root": "pages/swiper/",
+      "pages": ["swiper"]
+    },
+    {
+      "root": "pages/swipe-cell/",
+      "pages": ["swipe-cell"]
+    },
+    {
+      "root": "pages/tree-select/",
+      "pages": ["tree-select"]
+    },
+    {
+      "root": "pages/indexes/",
+      "pages": ["indexes", "base/index", "custom/index"]
+    }
+  ],
+  "usingComponents": {
+    "t-demo": "./components/demo-block/index",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "backgroundColor": "#f6f6f6",
+    "navigationBarTitleText": "AI",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

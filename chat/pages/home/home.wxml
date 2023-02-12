@@ -1,0 +1,15 @@
+<t-tabs value="{{menu}}" bindchange="onChange">
+  <t-tab-panel wx:for="{{tabs}}" wx:key="index" url="{{item.url}}" icon="item.icon" label="{{item.label}}" value="{{item.value}}" />
+</t-tabs>
+<view style="text-align: center; color: #b9b9b9" wx:if="{{pageLoading}}">
+  <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
+</view>
+<view wx:if="{{menu==='home'}}" class="home">
+  <home/>  
+</view>
+<view wx:if="{{menu === 'chat'}}">
+  <chat/>  
+</view>
+<view wx:if="{{menu === 'user'}}">
+  <!-- <chat/>   -->
+</view>

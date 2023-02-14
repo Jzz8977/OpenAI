@@ -1,5 +1,6 @@
 page {
     box-sizing: border-box;
+    color:#fff;
     padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
   }
   
@@ -57,3 +58,8 @@ page {
     height: auto;
     background-color: greenyellow;
   }
+  .topBg{
+    background-color: rgb(76, 71, 148);
+    --td-tabs-item-color:red;
+    height: 100rpx;
+}

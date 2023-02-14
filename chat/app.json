@@ -1,65 +1,116 @@
 {
-  "pages": [
-    "pages/home/home"
-    
-  ],
-  "subpackages": [
-    {
-      "root": "pages/side-bar/",
-      "pages": ["side-bar", "base/index", "switch/index", "custom/index", "with-icon/index"]
+    "pages": [
+        "pages/home/home",
+        "components/navbar/navbar",
+        "pages/chat/chat",
+        "pages/user/user",
+        "pages/ai/ai",
+        "pages/ai/chat/chat",
+        "pages/ai/dell/dell"
+    ],
+    "subpackages": [
+        {
+            "root": "pages/side-bar/",
+            "pages": [
+                "side-bar",
+                "base/index",
+                "switch/index",
+                "custom/index",
+                "with-icon/index"
+            ]
+        },
+        {
+            "root": "pages/action-sheet/",
+            "pages": [
+                "action-sheet"
+            ]
+        },
+        {
+            "root": "pages/avatar/",
+            "pages": [
+                "avatar"
+            ]
+        },
+        {
+            "root": "pages/calendar/",
+            "pages": [
+                "calendar"
+            ]
+        },
+        {
+            "root": "pages/dialog/",
+            "pages": [
+                "dialog"
+            ]
+        },
+        {
+            "root": "pages/picker/",
+            "pages": [
+                "picker"
+            ]
+        },
+        {
+            "root": "pages/rate/",
+            "pages": [
+                "rate"
+            ]
+        },
+        {
+            "root": "pages/swiper/",
+            "pages": [
+                "swiper"
+            ]
+        },
+        {
+            "root": "pages/swipe-cell/",
+            "pages": [
+                "swipe-cell"
+            ]
+        },
+        {
+            "root": "pages/tree-select/",
+            "pages": [
+                "tree-select"
+            ]
+        },
+        {
+            "root": "pages/indexes/",
+            "pages": [
+                "indexes",
+                "base/index",
+                "custom/index"
+            ]
+        }
+    ],
+    "tabBar": {
+        "custom": true,
+        "color": "#fff",
+        "selectedColor": "#FF5F15",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/ai/ai",
+                "text": "分类"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "用戶"
+            }
+        ]
     },
-    {
-      "root": "pages/action-sheet/",
-      "pages": ["action-sheet"]
+    "usingComponents": {},
+    "window": {
+        "navigationStyle": "custom",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f6f6f6",
+        "backgroundColor": "#f6f6f6",
+        "navigationBarTitleText": "AI",
+        "navigationBarTextStyle": "black"
     },
-    {
-      "root": "pages/avatar/",
-      "pages": ["avatar"]
-    },
-    {
-      "root": "pages/calendar/",
-      "pages": ["calendar"]
-    },
-    {
-      "root": "pages/dialog/",
-      "pages": ["dialog"]
-    },
-    {
-      "root": "pages/picker/",
-      "pages": ["picker"]
-    },
-    {
-      "root": "pages/rate/",
-      "pages": ["rate"]
-    },
-    {
-      "root": "pages/swiper/",
-      "pages": ["swiper"]
-    },
-    {
-      "root": "pages/swipe-cell/",
-      "pages": ["swipe-cell"]
-    },
-    {
-      "root": "pages/tree-select/",
-      "pages": ["tree-select"]
-    },
-    {
-      "root": "pages/indexes/",
-      "pages": ["indexes", "base/index", "custom/index"]
-    }
-  ],
-  "usingComponents": {
-    "t-demo": "./components/demo-block/index",
-    "t-button": "tdesign-miniprogram/button/button",
-    "t-icon": "tdesign-miniprogram/icon/icon"
-  },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f6f6f6",
-    "backgroundColor": "#f6f6f6",
-    "navigationBarTitleText": "AI",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json"
 }

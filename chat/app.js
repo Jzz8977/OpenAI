@@ -16,6 +16,7 @@ App({
         userInfo: {},
         address: {},
         passport: {},
+        statusBarHeight: wx.getSystemInfoSync()['statusBarHeight']
     },
     onShow() {
         if (gulpError !== 'gulpErrorPlaceHolder') {
@@ -26,11 +27,16 @@ App({
     },
     onLaunch (options) {
       try {
-        if (wx.getSystemInfoSync) {
-          const systemInfo = wx.getSystemInfoSync() || {}
-  
-          this.globalData.systemInfo = systemInfo
-        }
+        let menuButtonObject = wx.getMenuButtonBoundingClientRect();
+        wx.getSystemInfo({
+            success: res => {
+                this.globalData.systemInfo = res
+                this.globalData.height = res.statusBarHeight
+            },
+            fail(err) {
+                console.log(err);
+            }
+        })
   
         if (wx.setStorageSync) {
           wx.setStorageSync('appConfig', {
@@ -79,6 +85,11 @@ App({
   
         //   this.globalData.query = query || {}
         // }
+        if (query.scene == 1007 || query.scene == 1008) {
+        this.globalData.share = true
+        } else {
+        this.globalData.share = false
+        }
   
         this.getUpdateManager()
   

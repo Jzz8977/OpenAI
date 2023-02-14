@@ -6,7 +6,7 @@
     "t-tabs": "tdesign-miniprogram/tabs/tabs",
     "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
     "home":"../../components/home/home",
-    "chat":"../../components/chat/chat"
+    "nav-bar": "../../components/navbar/navbar"
   },
   "navigationBarTitleText": "TDesign UI",
   "navigationBarBackgroundColor": "#f6f6f6",

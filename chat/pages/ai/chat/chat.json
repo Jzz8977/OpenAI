@@ -1,0 +1,14 @@
+{
+    "usingComponents": {
+      "t-button": "tdesign-miniprogram/button/button",
+      "t-avatar": "tdesign-miniprogram/avatar/avatar",
+      "t-input": "tdesign-miniprogram/input/input",
+      "t-tabs": "tdesign-miniprogram/tabs/tabs",
+      "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
+      "t-message": "tdesign-miniprogram/message/message",
+      "t-image": "tdesign-miniprogram/image/image",
+      "nav-bar": "../../../components/navbar/navbar",
+      "t-icon": "tdesign-miniprogram/icon/icon",
+      "nav-bac": "../../../components/navbac/navbac"
+    }
+}

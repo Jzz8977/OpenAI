@@ -1,0 +1,5 @@
+<view class="navBack" >
+    <view class="navBackTitle" bindtap="goBack">
+        <t-icon name="chevron-left" size="48rpx" bind:click="onIconTap" />返回
+    </view>
+</view>

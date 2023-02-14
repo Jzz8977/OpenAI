@@ -1,0 +1,28 @@
+/* pages/ai/ai.wxss */
+page{
+    background-color: #151618;
+}
+.wrapDiv{
+    width: 560rpx;
+    margin: 0 auto;
+    background-color: #53c8fe;
+    height: 230rpx;
+    border-radius: 10rpx;
+    padding: 40rpx;
+    box-shadow:1px 1px 4px #508aff;
+    border: sandybrown;
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+}
+.title{
+    font-size: large;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 10rpx;
+}
+.content{
+    font-size: large;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10rpx;
+}

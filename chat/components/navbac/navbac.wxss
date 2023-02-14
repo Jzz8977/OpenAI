@@ -1,0 +1,15 @@
+/* components/navbac/navbac.wxss */
+.navBack {
+    width: 100%;
+    background-color: #000;
+    height: 100rpx;
+    color: #fff;
+    line-height: 100rpx;
+    text-indent: 40rpx;
+}
+.navBackTitle{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+}

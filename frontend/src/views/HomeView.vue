@@ -2,23 +2,16 @@
 <template>
   <main>
     <div id="chat_container">
-      <div
-        v-for="(chat, i) in wrapper"
-        :key="i"
-        class="wrapper"
-        :class="{ ai: chat.isAi }"
-      >
+      <div v-for="(chat, i) in wrapper" :key="i" class="wrapper" :class="{ ai: chat.isAi }">
         <Chat :chat="chat" :key="i" />
       </div>
     </div>
-    <form @submit.prevent="fetchAnswer">
-      <textarea
-        rows="1"
-        cols="1"
-        placeholder="Ask VueChat..."
-        v-model="question"
-      ></textarea>
+    <form @submit.prevent="fetchAnswer" style="position: relative;">
+      <textarea rows="1" cols="1" placeholder="Ask ChatGPT..." v-model="question"></textarea>
       <button type="submit"><img src="@/assets/send.svg" alt="send" /></button>
+      <p style="position: absolute;top: -20px;color:#fff">
+        You can input 'stop', finish context..
+      </p>
     </form>
   </main>
 </template>

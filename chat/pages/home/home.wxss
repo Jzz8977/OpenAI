@@ -13,6 +13,7 @@ page {
     margin-right: 20rpx;
     border: 1px solid lightgrey;
   }
+
   
   .tabs-pane:nth-last-child(1) {
     margin-right: 0;

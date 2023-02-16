@@ -2,7 +2,6 @@
     "pages": [
         "pages/home/home",
         "components/navbar/navbar",
-        "pages/chat/chat",
         "pages/user/user",
         "pages/ai/ai",
         "pages/ai/chat/chat",
@@ -83,10 +82,9 @@
         }
     ],
     "tabBar": {
-        "custom": true,
         "color": "#fff",
-        "selectedColor": "#FF5F15",
-        "backgroundColor": "#ffffff",
+        "selectedColor": "#ddd",
+        "backgroundColor": "#000",
         "borderStyle": "black",
         "list": [
             {

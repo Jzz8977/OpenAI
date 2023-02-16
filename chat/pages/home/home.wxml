@@ -2,7 +2,7 @@
 <view style='padding-top: {{height}}px;'></view>
 <scroll-view scroll-y style="height:100rpx">
     <view class="scroll-view-item" >
-  aaaa
+            
     </view>
 
 </scroll-view>

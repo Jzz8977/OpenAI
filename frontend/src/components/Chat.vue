@@ -12,6 +12,7 @@
   
   <script setup>
 import { nextTick, onMounted, ref, watch } from "vue";
+
 defineProps({
   chat: {
     type: Object || null,

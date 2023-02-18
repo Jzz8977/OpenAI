@@ -20,7 +20,8 @@ router.use('/book', bookRouter)
 // 通过 userRouter 来处理 /user 路由
 router.use('/user', userRouter)
 
-
+// 通过 userRouter 来处理 /user 路由
+router.use('/openAI', userRouter)
 /**
     集中处理 404请求的中间件
     注意：该中间件必须放在正常处理流程之后

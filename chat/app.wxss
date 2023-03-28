@@ -1,24 +1,13 @@
 /* app.wxss */
 page {
-    background: #000;
+    background: #08132B;
     height: 100%;
+    position: relative;
 }
-
-.demo {
-    padding-bottom: 56rpx;
-}
-
-.demo-title {
-    font-size: 48rpx;
-    font-weight: 700;
-    line-height: 64rpx;
-    margin: 48rpx 32rpx 0;
-    color: var(--td-font-gray-1, rgba(0, 0, 0, 0.9));
-}
-
-.demo-desc {
-    font-size: 28rpx;
-    color: var(--td-font-gray-2, rgba(0, 0, 0, 0.6));
-    margin: 16rpx 32rpx 0;
-    line-height: 44rpx;
+.bg-rt{
+    position: absolute;
+    width: 498rpx;
+    height: 428rpx;
+    top: 100px;
+    right: 0;
 }

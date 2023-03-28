@@ -16,11 +16,12 @@
   </main>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 import Chat from "@/components/Chat.vue";
 const question = ref("");
 const wrapper = ref([]);
 const loading = ref(false);
+const prompt = reactive({message:[]})
 
 const fetchAnswer = async () => {
   try {
@@ -33,6 +34,14 @@ const fetchAnswer = async () => {
       isAi: true,
       value: "Loading....",
     });
+    console.log(prompt.message.value)
+    debugger
+
+    prompt.message.push({
+      role:'user',
+      content:question.value
+    })
+    debugger
     const res = await fetch("http://localhost:8000", {
       method: "POST",
       headers: {
